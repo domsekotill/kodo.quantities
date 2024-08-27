@@ -39,6 +39,18 @@ def test_modulus() -> None:
 	assert (3600 @ Time.MS) % Time.S == 600 @ Time.MS
 
 
+def test_order() -> None:
+	assert (1 @ Time.S) > (999 @ Time.MS)
+	assert (1 @ Time.S) >= (999 @ Time.MS)
+	assert (1 @ Time.S) >= (1 @ Time.S)
+
+	assert (999 @ Time.MS) < (1 @ Time.S)
+	assert (999 @ Time.MS) <= (1 @ Time.S)
+	assert (1 @ Time.S) <= (1 @ Time.S)
+
+	assert (1 @ Time.S) != (2 @ Time.S)
+
+
 if TYPE_CHECKING:
 	def type_checks() -> None:
 		# Checks for type checker false negatives
@@ -55,3 +67,8 @@ if TYPE_CHECKING:
 
 		_ = (1 @ Time.S) // 2  # type: ignore[operator]
 		_ = (1 @ Time.S) // 2.0  # type: ignore[operator]
+
+		_ = (1 @ Time.S) > 10  # type: ignore[operator]
+		_ = (1 @ Time.S) >= 10  # type: ignore[operator]
+		_ = (1 @ Time.S) < 10  # type: ignore[operator]
+		_ = (1 @ Time.S) <= 10  # type: ignore[operator]
