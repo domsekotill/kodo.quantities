@@ -11,6 +11,7 @@ name = "kodo.quantities"
 version = "0.1.1"
 description = "Types for representing physical quantities, which have a magnitude and a unit"
 license = {file = "LICENCE.txt"}
+readme = "README.md"
 
 classifiers = [
 	"Development Status :: 4 - Beta",
