@@ -76,6 +76,16 @@ repos:
     types_or: [python, pyi]
     stages: [commit, manual]
 
+- repo: https://code.kodo.org.uk/dom/pre-commit-pytest
+  rev: v1.0
+  hooks:
+  - id: pytest
+    types_or: [python, markdown]
+    stages: [commit, manual]
+    args: [--doctest-modules, --doctest-continue-on-failure]
+  - id: pytest
+    args: [test.py]
+
 - repo: https://github.com/astral-sh/ruff-pre-commit
   rev: v0.6.2
   hooks:
