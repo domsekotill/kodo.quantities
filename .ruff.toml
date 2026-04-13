@@ -173,3 +173,4 @@ ignore = [
 
 [lint.per-file-ignores]
 "test*" = ["D1"]
+"doc/*" = ["D"]
