@@ -8,7 +8,7 @@ email = "dom.sekotill@kodo.org.uk"
 
 [project]
 name = "kodo.quantities"
-version = "0.1.1"
+version = "0.1.2"
 description = "Types for representing physical quantities, which have a magnitude and a unit"
 license = {file = "LICENCE.txt"}
 readme = "README.md"
