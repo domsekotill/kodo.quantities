@@ -1,4 +1,4 @@
-# Copyright 2024 Dom Sekotill <dom.sekotill@kodo.org.uk>
+# Copyright 2024, 2026 Dom Sekotill <dom.sekotill@kodo.org.uk>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -194,7 +194,6 @@ from typing import TYPE_CHECKING
 from typing import Generic
 from typing import Self
 from typing import TypeVar
-from typing import overload
 
 U = TypeVar("U", bound="QuantityUnit")
 
