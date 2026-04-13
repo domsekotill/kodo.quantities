@@ -35,6 +35,7 @@ docs = [
 [project.urls]
 Source = "https://code.kodo.org.uk/dom/python-quantities"
 Issues = "https://code.kodo.org.uk/dom/python-quantities/-/issues"
+Documentation = "https://docs.kodo.org.uk/kodo.quantities"
 
 
 [tool.isort]
