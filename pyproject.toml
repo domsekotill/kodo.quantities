@@ -24,6 +24,14 @@ classifiers = [
 
 requires-python = "~=3.11"
 
+[project.optional-dependencies]
+docs = [
+	"kodo.plugins.sphinx-docstrings ~=0.1.1",
+	"myst-parser",
+	"sphinx ~=9.0",
+	"sphinx-rtd-theme",
+]
+
 [project.urls]
 Source = "https://code.kodo.org.uk/dom/python-quantities"
 Issues = "https://code.kodo.org.uk/dom/python-quantities/-/issues"
